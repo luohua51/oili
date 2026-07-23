@@ -1,11 +1,10 @@
 {
-  "root": ".",
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
   "framework": "vite",
   "env": {
-    "SUPABASE_URL": "@supabase_url",
-    "SUPABASE_SERVICE_KEY": "@supabase_service_key"
+    "SUPABASE_URL": "https://fpefhcmgzowliswnkhhb.supabase.co",
+    "SUPABASE_SERVICE_KEY": "sb_publishable_e7oZqpRgGDYjwfkcircEEA_iuIpI-Xi"
   },
   "rewrites": [
     {
