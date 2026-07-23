@@ -37,7 +37,7 @@ export default function Transactions() {
       return
     }
 
-    if (parseFloat(amount) > user?.balance) {
+    if (parseFloat(amount) > (user?.balance || 0)) {
       setError('余额不足')
       return
     }

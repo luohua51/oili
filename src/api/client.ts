@@ -1,5 +1,5 @@
 import axios from 'axios'
-import type { User, Transaction, Flow, LoginRequest, RechargeRequest, TransferRequest, DeductRequest } from '@/types'
+import type { User, Transaction, Flow, LoginRequest, LoginResponse, RechargeRequest, TransferRequest, DeductRequest } from '@/types'
 
 const client = axios.create({
   baseURL: '/api',

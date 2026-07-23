@@ -60,7 +60,7 @@ export default function AdminMembers() {
     }
 
     try {
-      await memberApi.update(editingMember!.id, { name: formData.name, phone: formData.phone, email: formData.email })
+      await memberApi.update(editingMember!.id, { name: formData.name, phone: formData.phone })
       await loadMembers()
       setSuccess('修改成功')
       setTimeout(() => setShowEditModal(false), 1000)
