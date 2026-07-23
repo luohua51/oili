@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gradient-to-br from-pink-50 via-purple-50 to-purple-100 text-gray-800;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-gradient-to-r from-primary to-purple-600 text-white px-6 py-3 rounded-lg font-medium transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/30 hover:scale-105 active:scale-95;
+  }
+
+  .btn-success {
+    @apply bg-gradient-to-r from-green-400 to-green-600 text-white px-4 py-2 rounded-lg font-medium transition-all duration-300 hover:shadow-md hover:shadow-green-500/30;
+  }
+
+  .btn-danger {
+    @apply bg-gradient-to-r from-red-400 to-red-600 text-white px-4 py-2 rounded-lg font-medium transition-all duration-300 hover:shadow-md hover:shadow-red-500/30;
+  }
+
+  .btn-outline {
+    @apply border-2 border-primary text-primary px-4 py-2 rounded-lg font-medium transition-all duration-300 hover:bg-primary hover:text-white hover:shadow-lg hover:shadow-purple-500/30;
+  }
+
+  .card {
+    @apply bg-white/80 backdrop-blur-sm rounded-xl shadow-md p-6 transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/10;
+  }
+
+  .input-field {
+    @apply w-full px-4 py-3 border-2 border-purple-100 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all duration-300 bg-white/70;
+  }
+
+  .nav-item {
+    @apply flex items-center gap-3 px-4 py-3 rounded-lg text-gray-600 hover:bg-gradient-to-r hover:from-primary/10 hover:to-purple-100 hover:text-primary transition-all duration-300 cursor-pointer;
+  }
+
+  .nav-item.active {
+    @apply bg-gradient-to-r from-primary to-purple-600 text-white shadow-lg shadow-purple-500/30;
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent;
+  }
+
+  .gradient-border {
+    @apply border-2 border-transparent bg-gradient-to-r from-white to-white/80 rounded-xl p-[2px];
+  }
+
+  .gradient-border-inner {
+    @apply bg-gradient-to-br from-pink-50 via-purple-50 to-purple-100 rounded-lg;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    font-variant-numeric: tabular-nums;
+  }
+}
